@@ -5,53 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Hasler Tehou" content="Hasler Tehou">
     <title>Octhama</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Q1EJG3qO4zbb4l9mZh/RZcOJh5ZZRRn5B5Kj+RUxM5zfB6UJYXU+1KqdWZnQ1aGrBIV7fLdvx8K7cfuZJpGpXUg==" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="assets/css/octhvmv-style.css" rel="stylesheet">
 </head>
 
-<body class="d-flex h-100 text-center text-bg-dark">
+<body>
+
 <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
 <header id="header">
     <div class="d-flex flex-column">
         <div class="profile">
             <img src="#" alt="" class="img-fluid rounded-circle">
             <h1 class="text-light"><a href="index.html">Hasler TEHOU</a></h1>
             <div class="social-links mt-3 text-center">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="#" class="email"><i class="bi bi-envelope-at"></i></a>
+                <a href="#" class="github"><i class="bi bi-github"></i></a>
+                <a href="#" class="stackoverflow"><i class="bi bi-stack-overflow"></i></a>
+                <a href="#" class="discord"><i class="bi bi-discord"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
         </div>
         <nav id="navbar" class="nav-menu navbar">
             <ul>
-                <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-                <li><a href="#project" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
-                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+                <li><a href="#home" class="nav-link scrollto active"><i class="bi bi-house"></i> <span>Home</span></a></li>
+                <li><a href="#about" class="nav-link scrollto"><i class="bi bi-patch-question"></i> <span>About</span></a></li>
+                <li><a href="#resume" class="nav-link scrollto"><i class="bi bi-file-earmark-person"></i> <span>Resume</span></a></li>
+                <li><a href="#project" class="nav-link scrollto"><i class="bi bi-folder-check"></i> <span>Projects</span></a></li>
+                <li><a href="#contact" class="nav-link scrollto"><i class="bi bi-person-lines-fill"></i> <span>Contact</span></a></li>
             </ul>
         </nav>
     </div>
 </header>
+
+<section id="home" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="home-container" data-aos="fade-in">
+        <h1>Hasler TEHOU</h1>
+        <p>I'm <span class="typed" data-typed-items="IT Specialist in power and, Fintech passionate learner, modern art lover"></span></p>
+    </div>
+</section>
+
 <main id="main">
-    <section id="home" class="d-flex flex-column justify-content-center align-items-center">
-        <div class="home-container" data-aos="fade-in">
-            <h1>Hasler TEHOU</h1>
-            <p>I'm <span class="typed" data-typed-items="IT, Specialist, in, power, and, Fintech, learner,"></span></p>
-        </div>
-    </section>
-    <section id="about" class="d-flex flex-column justify-content-center align-items-center">
-        <div class="home-container">
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
                 <h2>About</h2>
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
             <div class="row">
                 <div class="col-lg-4" data-aos="fade-right">
                     <img src="#" class="img-fluid" alt="">
                 </div>
-                    <h3>IT Specialist in power &amp; Fintech passionate.</h3>
+                <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3>IT Specialist in power &amp; Fintech passionate.</h3>
                     <p class="fst-italic">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.
@@ -59,7 +67,7 @@
                     <div class="row">
                             <ul>
                                 <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Namur, Belgium</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Professional Licence</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Professional Licence (Currently IT Bachelor Student)</span></li>
                                 <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>kuassi.tehou@gmail.com</span></li>
                                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                             </ul>
@@ -68,6 +76,7 @@
                         Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
                         Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
                     </p>
+            </div>
             </div>
         </div>
     </section>
@@ -99,7 +108,6 @@
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
                     <div class="progress">
                         <span class="skill">PHP <i class="val">80%</i></span>
                         <div class="progress-bar-wrap">
@@ -142,7 +150,7 @@
                     <h3 class="resume-title">Education</h3>
                     <div class="resume-item">
                         <h4>IT Bachelor (In recycling)</h4>
-                        <h5>2022 - 2026</h5>
+                        <h5>2022 - 2025</h5>
                         <p><em>ESA Namur, Belgium</em></p>
                         <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
                     </div>
@@ -154,7 +162,7 @@
                     </div>
                     <div class="resume-item">
                         <h4>Professional Licence in Software Engineering and Networking</h4>
-                        <h5>2016 - 2028</h5>
+                        <h5>2016 - 2018</h5>
                         <p><em>PIGIER, Cotonou, Benin Republic</em></p>
                         <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
                     </div>
@@ -164,7 +172,7 @@
                     <div class="resume-item">
                         <h4>Trainee Full Stack Web Developper</h4>
                         <h5>2020</h5>
-                        <p><em>Woluwe-Saint-Lambert, Brussels, Belgium</em></p>
+                        <p><em>BeeGroup (culturius.com) Woluwe-Saint-Lambert, Brussels, Belgium</em></p>
                         <ul>
                             <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
                             <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
@@ -175,7 +183,7 @@
                     <div class="resume-item">
                         <h4>Academic Internship in Software Development and Infrastructure Deployment Assistant</h4>
                         <h5>2018</h5>
-                        <p><em>Stepping Stone Advertising, New York, NY</em></p>
+                        <p><em>ATS Afrique, Cotonou, Benin Republic</em></p>
                         <ul>
                             <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
                             <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
@@ -184,33 +192,29 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4" data-aos="fade-up">
-                    <h3 class="resume-title">Certificates</h3>
-                    <div class="resume-item pb-0">
-                        <h4>Hasler Tehou</h4>
-                        <p><em>IT Specialist and Fintech passionate and leaner, I had several experience with several technologies to provide efficient and great solutions to growing up businesses and manage easier data for business intelligence.</em></p>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="resume-title">Professional Experience</h3>
+                    <div class="resume-item">
+                        <h4>Trainee Full Stack Web Developper</h4>
+                        <h5>2020</h5>
+                        <p><em>BeeGroup (culturius.com) Woluwe-Saint-Lambert, Brussels, Belgium</em></p>
                         <ul>
-                            <li>kuassi.tehou@gmail.com</li>
+                            <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                            <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                            <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                            <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
                         </ul>
                     </div>
-                    <h3 class="resume-title">Education</h3>
                     <div class="resume-item">
-                        <h4>IT Bachelor (In recycling)</h4>
-                        <h5>2022 - 2026</h5>
-                        <p><em>ESA Namur, Belgium</em></p>
-                        <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Master Science Degree in IT Expert</h4>
-                        <h5>2018 - 2021</h5>
-                        <p><em>ESI SUPINFO International University (Becoming ESII U365), Brussels, Belgium</em></p>
-                        <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Professional Licence in Software Engineering and Networking</h4>
-                        <h5>2016 - 2028</h5>
-                        <p><em>PIGIER, Cotonou, Benin Republic</em></p>
-                        <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+                        <h4>Academic Internship in Software Development and Infrastructure Deployment Assistant</h4>
+                        <h5>2018</h5>
+                        <p><em>ATS Afrique, Cotonou, Benin Republic</em></p>
+                        <ul>
+                            <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                            <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                            <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                            <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -327,12 +331,7 @@
                             <h4>Email:</h4>
                             <p>kuassi.tehou@gmail.com</p>
                         </div>
-                        <div class="phone">
-                            <i class="bi bi-phone"></i>
-                            <h4>Call:</h4>
-                            <p>+32 470 91 04 16</p>
-                        </div>
-                        <iframe src="https://www.google.com/maps/place/Ecole+Supérieure+des+Affaires/@50.466297,4.8631651,16.27z/data=!4m13!1m7!3m6!1s0x47c1996d0c2c653f:0xc15626b6c4165205!2sNamur!3b1!8m2!3d50.4649359!4d4.8650729!3m4!1s0x0:0x3a12f0e139d7de93!8m2!3d50.4637948!4d4.8624548" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2759.6866288653073!2d4.873303120035407!3d50.47034657873817!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbg!4v1673062411277!5m2!1sen!2sbg" width="600" height="450" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
