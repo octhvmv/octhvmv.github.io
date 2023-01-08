@@ -1,9 +1,9 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+
+/*General*/
+
 body {
     font-family: "Open Sans", sans-serif;
-    color: #272829;
+    color: #000;
 }
 
 a {
@@ -16,18 +16,13 @@ a:hover {
     text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+
+/*Back to top button*/
+
 .back-to-top {
     position: fixed;
     visibility: hidden;
@@ -49,7 +44,7 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #2eafec;
+    background: #37b3ed;
     color: #fff;
 }
 
@@ -58,9 +53,9 @@ h6 {
     opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+
+/*Header*/
+
 #header {
     position: fixed;
     top: 0;
@@ -70,7 +65,7 @@ h6 {
     transition: all ease-in-out 0.5s;
     z-index: 9997;
     padding: 0 15px;
-    background: #040b14;
+    background: #000;
     overflow-y: auto;
 }
 
@@ -132,10 +127,8 @@ h6 {
     }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/* Desktop Navigation */
+
+/*Desktop Navigation*/
 .nav-menu {
     padding: 30px 0 0 0;
 }
@@ -214,9 +207,7 @@ h6 {
     left: 0;
 }
 
-/*--------------------------------------------------------------
-# home Section
---------------------------------------------------------------*/
+/*home Section*/
 #home {
     width: 100%;
     height: 100vh;
@@ -282,16 +273,14 @@ h6 {
     }
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+/*Sections General*/
 section {
     padding: 60px 0;
     overflow: hidden;
 }
 
 .section-bg {
-    background: #f5f8fd;
+    background: #dff3fc;
 }
 
 .section-title {
@@ -322,9 +311,7 @@ section {
     margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+/*About*/
 .about .content h3 {
     font-weight: 700;
     font-size: 26px;
@@ -358,9 +345,7 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
+/*Skills*/
 .skills .progress {
     height: 60px;
     display: block;
@@ -395,9 +380,7 @@ section {
     background-color: #149ddd;
 }
 
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
+/*Resume*/
 .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
@@ -456,9 +439,7 @@ section {
     border: 2px solid #1f5297;
 }
 
-/*--------------------------------------------------------------
-# project
---------------------------------------------------------------*/
+/*project*/
 .project .project-item {
     margin-bottom: 30px;
 }
@@ -556,9 +537,7 @@ section {
     bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# project Details
---------------------------------------------------------------*/
+/*project Details*/
 .project-details {
     padding-top: 40px;
 }
@@ -622,9 +601,7 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+/*Contact*/
 .contact {
     padding-bottom: 130px;
 }
@@ -817,9 +794,7 @@ section {
     }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
+/*Breadcrumbs*/
 .breadcrumbs {
     padding: 20px 0;
     background: #f9f9f9;
@@ -864,9 +839,7 @@ section {
     }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/*Footer*/
 #footer {
     padding: 15px;
     color: #f4f6fd;
@@ -876,7 +849,7 @@ section {
     bottom: 0;
     width: 300px;
     z-index: 9999;
-    background: #040b14;
+    background: #000;
 }
 
 #footer .copyright {
@@ -887,7 +860,7 @@ section {
     padding-top: 5px;
     text-align: center;
     font-size: 13px;
-    color: #eaebf0;
+    color: #fff;
 }
 
 @media (max-width: 1199px) {

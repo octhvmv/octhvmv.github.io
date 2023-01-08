@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@popperjs/core, @srexi/purecounterjs, aos, bootstrap, bootstrap-icons, font-awesome, isotope-layout, swiper, typed.js, waypoints}" />
+    <file url="PROJECT" libraries="{@popperjs/core, @srexi/purecounterjs, Darkmode.js, aos, bootstrap, bootstrap-icons, darkmode-js, font-awesome, isotope-layout, swiper, typed.js, waypoints}" />
   </component>
 </project>
