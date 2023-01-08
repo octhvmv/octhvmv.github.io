@@ -1,8 +1,8 @@
 (function() {
     "use strict";
 
-    /**
-     * Easy selector helper function
+    /*
+     Easy selector helper function
      */
     const select = (el, all = false) => {
         el = el.trim()
@@ -13,8 +13,8 @@
         }
     }
 
-    /**
-     * Easy event listener function
+    /*
+     Easy event listener function
      */
     const on = (type, el, listener, all = false) => {
         let selectEl = select(el, all)
@@ -27,15 +27,15 @@
         }
     }
 
-    /**
-     * Easy on scroll event listener
+    /*
+     Easy on scroll event listener
      */
     const onscroll = (el, listener) => {
         el.addEventListener('scroll', listener)
     }
 
-    /**
-     * Navbar links active state on scroll
+    /*
+     Navbar links active state on scroll
      */
     let navbarlinks = select('#navbar .scrollto', true)
     const navbarlinksActive = () => {
@@ -54,8 +54,8 @@
     window.addEventListener('load', navbarlinksActive)
     onscroll(document, navbarlinksActive)
 
-    /**
-     * Scrolls to an element with header offset
+    /*
+     Scrolls to an element with header offset
      */
     const scrollto = (el) => {
         let elementPos = select(el).offsetTop
@@ -65,8 +65,8 @@
         })
     }
 
-    /**
-     * Back to top button
+    /*
+     Back to top button
      */
     let backtotop = select('.back-to-top')
     if (backtotop) {
@@ -81,17 +81,17 @@
         onscroll(document, toggleBacktotop)
     }
 
-    /**
-     * Mobile nav toggle
+    /*
+     Mobile nav toggle
      */
     on('click', '.mobile-nav-toggle', function(e) {
         select('body').classList.toggle('mobile-nav-active')
-        this.classList.toggle('bi-list')
-        this.classList.toggle('bi-x')
+        this.classList.toggle('fa-ellipsis')
+        this.classList.toggle('fa-ellipsis-vertical')
     })
 
-    /**
-     * Scroll with offset on links with a class name .scrollto
+    /*
+     Scroll with offset on links with a class name .scrollto
      */
     on('click', '.scrollto', function(e) {
         if (select(this.hash)) {
@@ -108,8 +108,8 @@
         }
     }, true)
 
-    /**
-     * Scroll with ofset on page load with hash links in the url
+    /*
+     * Scroll with offset on page load with hash links in the url
      */
     window.addEventListener('load', () => {
         if (window.location.hash) {
@@ -119,8 +119,8 @@
         }
     });
 
-    /**
-     * Hero type effect
+    /*
+     * Home type effect
      */
     const typed = select('.typed')
     if (typed) {
@@ -135,8 +135,8 @@
         });
     }
 
-    /**
-     * Skills animation
+    /*
+     Skills animation
      */
     let skilsContent = select('.skills-content');
     if (skilsContent) {
@@ -152,9 +152,9 @@
         })
     }
 
-    /**
-     * Porfolio isotope and filter
-     */
+    /*
+     Project isotope and filter
+
     window.addEventListener('load', () => {
         let  projectContainer = select('. project-container');
         if ( projectContainer) {
@@ -181,16 +181,17 @@
         }
 
     });
+    */
 
-    /**
-     * Initiate  project lightbox
+    /*
+     Initiate  project lightbox
      */
     const  projectLightbox = GLightbox({
         selector: '. project-lightbox'
     });
 
-    /**
-     *  project details slider
+    /*
+     project details slider
      */
     new Swiper('. project-details-slider', {
         speed: 400,
@@ -206,8 +207,8 @@
         }
     });
 
-    /**
-     * Animation on scroll
+    /*
+     Animation on scroll
      */
     window.addEventListener('load', () => {
         AOS.init({
@@ -218,8 +219,8 @@
         })
     });
 
-    /**
-     * Initiate Pure Counter
+    /*
+     Initiate Pure Counter
      */
     new PureCounter();
 
