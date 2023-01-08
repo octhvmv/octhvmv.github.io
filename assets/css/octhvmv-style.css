@@ -53,6 +53,24 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 
+/*img about*/
+
+.bubble {
+    border-radius: 250px 750px 250px 750px /
+                 750px 250px 750px 250px;
+    animation: wobble 15s ease-in-out alternate infinite;
+}
+
+@keyframes wobble {
+    50% {
+        border-radius: 750px 550px 350px 750px /
+                   350px 750px 550px 450px;
+    }
+    100% {
+        border-radius: 750px 250px 750px 250px /
+                   250px 750px 250px 750px;
+    }
+}
 
 /*Header*/
 
@@ -280,7 +298,7 @@ section {
 }
 
 .section-bg {
-    background: #dff3fc;
+    background: #f9f9f9;
 }
 
 .section-title {
