@@ -425,8 +425,9 @@ section {
 }
 
 .resume .resume-item h5 {
+    border-radius: 5px;
     font-size: 16px;
-    background: #e4edf9;
+    background: #dff3fc;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
@@ -453,7 +454,7 @@ section {
     border-radius: 50px;
     left: -9px;
     top: 0;
-    background: #fff;
+    background: #149ddd;
     border: 2px solid #1f5297;
 }
 
