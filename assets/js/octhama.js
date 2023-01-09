@@ -184,6 +184,44 @@
     */
 
     /*
+    Translate
+
+    const translateButton = document.getElementById("translate-button");
+    translateButton.addEventListener("click", () => {
+        const sourceLang = "en"; // la langue actuelle de votre site
+        const targetLang = "fr"; // la langue cible de la traduction
+
+        // récupération de tous les éléments de texte du site
+        const textElements = document.querySelectorAll("body *");
+
+        // traduction de chaque élément de texte
+        textElements.forEach(async element => {
+            const text = element.textContent;
+            const translatedText = await translateText(text, sourceLang, targetLang);
+            element.textContent = translatedText;
+        });
+    });
+    async function translateText(text, sourceLang, targetLang) {
+        const apiKey = "918615e7-9115-f66b-def6-4f892349a35a";
+        const endpoint = "https://api.deepl.com/v2/translate";
+
+        const data = {
+            auth_key: apiKey,
+            text: text,
+            source_lang: sourceLang,
+            target_lang: targetLang
+        };
+
+        const response = await fetch(endpoint, {
+            method: "POST",
+            body: JSON.stringify(data)
+        });
+        const json = await response.json();
+        return json.translations[0].text;
+    }
+    */
+
+    /*
      Initiate  project lightbox
      */
     const  projectLightbox = GLightbox({
